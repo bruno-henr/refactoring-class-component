@@ -4,13 +4,15 @@ import Routes from './routes';
 
 import GlobalStyle from './styles/global';
 
-const App = () => (
-  <>
-    <GlobalStyle />
-    <Router>
-      <Routes />
-    </Router>
-  </>
-);
+const App = () => {
+  return (
+    <div>
+      <Router>
+        <Routes />
+      </Router>
+      <GlobalStyle />
+    </div>
+  )
+}
 
 export default App;
